@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="last_seven.xhtml" x="649" y="361" zoom="true"/>
+        <Node id="login.xhtml" x="56" y="123" zoom="true"/>
+        <Node id="index.xhtml" x="200" y="347" zoom="true"/>
+        <Node id="last_full.xhtml" x="360" y="533" zoom="true"/>
+        <Node id="last_month.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="new_user.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="welcome.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="add_user_fail.xhtml" x="400" y="300" zoom="true"/>
+        <Node id="team_full.xhtml" x="229" y="42" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

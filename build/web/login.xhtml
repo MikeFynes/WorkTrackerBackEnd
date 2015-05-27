@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core"
+      style="background:white;">
+<head>
+<meta http-equiv="content-type" content="text/xhtml; charset=ISO-8859-1" />
+<title>Work Tracker Web</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+        		<script src="jquery-2.1.1.min.js"></script>
+
+		<script src="myjs.js"></script>
+</head>
+<body>
+    <div id="login_main_container">
+        <div id="login_content">
+
+<h2>WorkTracker login</h2>
+
+       
+   <!--      <tr>
+            <td class="first_cell"> <h:outputText  value="Enter your code" /></td>
+      
+        <td class="second_cell"> <h:inputText id="code" value="#{webBean.codeEntered}" required="true"> 
+            <f:validateLength minimum="4" maximum="10" />
+        </h:inputText></td>
+        </tr>
+       <tr>
+       <td></td>
+       <td>    <h:commandButton class="button" id="login_button"  action="#{webBean.checkLogin()}" value="Enter"></h:commandButton></td>
+         </tr>
+        
+    
+    </h:form>-->
+   <form id="adminLogin" action="WebApp" method="post">
+           <input type="hidden" name="method" value="login"></input>
+        <table id="login_table">
+                 
+                         
+                          
+                              <tr>
+            <td class="first_cell"> 
+                       
+                Tester Code:  </td>  <td class="second_cell"> <input class="second_cell" type="text" name="code" /> </td>
+                       </tr>
+                              <tr>
+                                  <td></td>
+                                  <td><input class="button" type="submit" value="Enter" />
+                                  </td>
+                              </tr>
+         </table>                    
+        </form>
+   
+
+
+     </div>
+    </div>
+</body>
+</html>

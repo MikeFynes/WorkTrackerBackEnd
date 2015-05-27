@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <managed-bean>
+        <managed-bean-name>dataBean</managed-bean-name>
+        <managed-bean-class>Control.DataBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+        
+    </managed-bean>
+    
+        <managed-bean>
+        <managed-bean-name>webBean</managed-bean-name>
+        <managed-bean-class>Control.WebBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+        
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>/login.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>validated</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>false</from-outcome>
+            <to-view-id>/welcome.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>sevenDays</from-outcome>
+            <to-view-id>/last_seven.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>lastMonth</from-outcome>
+            <to-view-id>/last_month.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>all</from-outcome>
+            <to-view-id>/last_full.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>fullTeam</from-outcome>
+            <to-view-id>/team_full.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>newUser</from-outcome>
+            <to-view-id>/new_user.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/last_seven.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>validated</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>false</from-outcome>
+            <to-view-id>/login.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/new_user.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>fail</from-outcome>
+            <to-view-id>/add_user_fail.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>
